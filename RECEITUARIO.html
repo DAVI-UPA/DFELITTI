@@ -1,8 +1,9 @@
+
 <html>
 	<head>
 		<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAJ6TrAFy+8QCC0vgA7+/vAC6n7ACE0/gAS2RuAKbU5QDAwMAAv+3+ACek6gApoeYAAAAAAAAAAAAAAAAARERERERERABEREREREREAEREREREREQAREREeIRERABJmZSohUREAERERKolVEQAREREozUVRABJmZRDNlFUAEREREQzZRUAREREREM2W1BJmZmZRDNlxUREREREQzZVREREREREMzVJmZmZmURDM0REREREREQzRERERERERAMAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA" rel="icon" type="image/x-icon" />
 		<style>
-			body{font-family:calibri-corpo;}
+			body{font-family:sans-serif;}
 			header img{margin-right:10px;}
 			th,input,textarea{padding-top:10px;}
 			.paciente td{width:100%; border-bottom:1px}
@@ -42,7 +43,6 @@
 				const urlParams = new URLSearchParams(window.location.search);
 				document.getElementById('nome_paciente').value = urlParams.get('nome');
 				document.getElementById('id_paciente').value = urlParams.get('id');
-				document.getElementById('id_atendimento').value = urlParams.get('at');
 				const unidade = {nome: urlParams.get('unidade'), endereco: 'Rua Marcilio Conrado, n 333 - Bairro Riacho Grande'};
 				switch(urlParams.get('unidade')){
 					case "UPA RIACHO GRANDE":
